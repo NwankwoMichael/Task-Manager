@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" defer src="src/controller.js"></script>
+    <!-- <script defer src="src/views/formView.js"></script> -->
+  </head>
+  <body>
+    <div class="general__container">
+      <header class="header">
+        <h1>TASK MANAGER</h1>
+      </header>
+      <div class="form-filter__box">
+        <form class="form">
+          <input
+            class="input__field"
+            type="text"
+            placeholder="Enter a new task..."
+          />
+          <button class="add__btn" type="submit" value="Add">Add</button>
+        </form>
+
+        <div class="filter__container">
+          <button class="btn__filter btn_all active__filter" type="button">
+            All
+          </button>
+          <button class="btn__filter btn_active" type="button">Active</button>
+          <button class="btn__filter btn_completed" type="button">
+            Completed
+          </button>
+        </div>
+      </div>
+
+      <div class="modal hide">
+        <button class="close-modal__btn">&times;</button>
+      </div>
+
+      <div class="bulk-btn_box">
+        <button class="bulk_btn bulk__mark">Mark as all Completed</button>
+        <button class="bulk_btn bulk__delete">Delete all completed task</button>
+      </div>
+
+      <div class="bulk__actions">
+        <button aria-label="Open menu">
+          <svg
+            class="menu-icon"
+            aria-hidden="true"
+            focusable="false"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="5" cy="12" r="2" />
+            <circle cx="12" cy="12" r="2" />
+            <circle cx="19" cy="12" r="2" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="overlay hide"></div>
+
+      <ul class="task-list">
+        <!-- <div class="task-list__container">
+          <div class="pair">
+            <svg
+              class="icon checked"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"
+              />
+
+              <path d="M9 12l2 2 4-4 1.5 1.5-5.5 5.5-3.5-3.5z" />
+            </svg>
+            <li class="list__item checked">Go grocery shopping</li>
+          </div>
+          <svg class="icon" width="12" height="12" viewBox="0 0 24 24">
+            <path
+              d="M3 6h18v2H3V6zm2 3h14l-1.5 12.5a1 1 0 0 1-1 .5H7.5a1 1 0 0 1-1-.5L5 9zm5 2v8h2v-8H10zm4 0v8h2v-8h-2zM9 4h6v2H9V4z"
+            />
+          </svg>
+        </div>
+
+        <div class="task-list__container">
+          <div class="pair">
+            <svg class="icon" width="12" height="12" viewBox="0 0 24 24">
+              <path
+                d="M12 22C6.477 22 2 17.523 2 12 S6.477 2 12 2s10 4.477 10 10 -4.477 10-10 10z"
+              />
+            </svg>
+            <li class="list__item">Read a book</li>
+          </div>
+          <svg class="icon" width="12" height="12" viewBox="0 0 24 24">
+            <path
+              d="M3 6h18v2H3V6zm2 3h14l-1.5 12.5a1 1 0 0 1-1 .5H7.5a1 1 0 0 1-1-.5L5 9zm5 2v8h2v-8H10zm4 0v8h2v-8h-2zM9 4h6v2H9V4z"
+            />
+          </svg>
+        </div>
+
+        <div class="task-list__container">
+          <div class="pair">
+            <svg class="icon" width="12" height="12" viewBox="0 0 24 24">
+              <path
+                d="M12 22C6.477 22 2 17.523 2 12 S6.477 2 12 2s10 4.477 10 10 -4.477 10-10 10z"
+              />
+            </svg>
+            <li class="list__item">Walk the dog</li>
+          </div>
+          <svg class="icon" width="12" height="12" viewBox="0 0 24 24">
+            <path
+              d="M3 6h18v2H3V6zm2 3h14l-1.5 12.5a1 1 0 0 1-1 .5H7.5a1 1 0 0 1-1-.5L5 9zm5 2v8h2v-8H10zm4 0v8h2v-8h-2zM9 4h6v2H9V4z"
+            />
+          </svg>
+        </div>
+
+        <div class="task-list__container">
+          <div class="pair">
+            <svg class="icon" width="12" height="12" viewBox="0 0 24 24">
+              <path
+                d="M12 22C6.477 22 2 17.523 2 12 S6.477 2 12 2s10 4.477 10 10 -4.477 10-10 10z"
+              />
+            </svg>
+            <li class="list__item">Call your Mum</li>
+          </div>
+          <svg class="icon" width="12" height="12" viewBox="0 0 24 24">
+            <path
+              d="M3 6h18v2H3V6zm2 3h14l-1.5 12.5a1 1 0 0 1-1 .5H7.5a1 1 0 0 1-1-.5L5 9zm5 2v8h2v-8H10zm4 0v8h2v-8h-2zM9 4h6v2H9V4z"
+            />
+          </svg>
+        </div> -->
+      </ul>
+    </div>
+  </body>
+</html>
