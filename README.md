@@ -42,8 +42,7 @@ This project reflects my current JavaScript skillset. Every feature was implemen
 
 ## 🔗 Live Demo
 
-Coming soon — will be hosted via GitHub Pages.  
-Once live, the link will be added here so visitors can try the app directly in their browser.
+[Try the Task Manager here](https://nwankwomichael.github.io/Task-Manager/)
 
 ## 🤝 Contributing
 
