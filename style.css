@@ -20,29 +20,32 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--text);
 }
 
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--neutral);
 }
 
 .general__container {
+  max-width: 60rem;
+  margin: 2rem auto;
   background-color: var(--default);
-  padding: 2.4rem;
+  padding: 1.6rem;
+  border-radius: 0.6rem;
   box-shadow: 0 0.4rem 0.4rem var(--border);
 }
 
 .header {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  margin: 1.4rem 0;
+  margin: 1rem 0;
 }
 
 .form-filter__box {
@@ -52,8 +55,8 @@ body {
 /* Form Section */
 .input__field {
   display: block;
-  margin-bottom: 1.4rem;
-  padding: 0.6rem 0;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
   width: 100%;
   font-size: 1.4rem;
   border: 0.1rem solid var(--border);
@@ -70,7 +73,7 @@ body {
   right: 0%;
   bottom: 0;
   transform: translate(0, -50%);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   padding: 0.2rem 1.4rem;
   border-radius: 0.3rem;
   border: none;
@@ -87,11 +90,11 @@ body {
 .filter__container {
   display: inline-flex;
   justify-content: right;
-  gap: 2rem;
+  gap: 1rem;
   width: 70%;
   border: 0.1rem solid var(--border);
   margin: 0.9rem 0;
-  padding: 0.5rem;
+  padding: 0.4rem;
   border-radius: 0.3rem;
 }
 
@@ -133,8 +136,10 @@ body {
 
 /* Bulk section */
 .modal {
-  width: 37rem;
-  height: 70vh;
+  width: 28rem;
+  height: auto;
+  max-height: 60vh;
+  overflow-y: auto;
   position: absolute;
   top: 50%;
   transform: translate(-10%, -50%);
@@ -143,7 +148,6 @@ body {
 }
 
 .bulk__actions {
-  /* margin-top: 2rem; */
   margin-bottom: -1.5rem;
 }
 
