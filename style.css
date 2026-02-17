@@ -334,3 +334,56 @@ button:focus {
   transform: scaleY(1.2);
   fill: var(--text);
 }
+
+/* 📱 Mobile & Tablet adjustments */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%; /* scale down base font size */
+  }
+
+  .general__container {
+    max-width: 95%; /* let container shrink to fit screen */
+    margin: 1rem; /* reduce margins */
+    padding: 1rem; /* tighter padding */
+  }
+
+  .header {
+    font-size: 1.4rem; /* smaller header text */
+    text-align: center;
+  }
+
+  .input__field {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
+
+  .add__btn {
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+  }
+
+  .filter__container {
+    flex-wrap: wrap; /* allow filters to wrap on small screens */
+    gap: 0.5rem;
+    width: 100%; /* full width */
+    justify-content: center;
+  }
+
+  .task-list__container {
+    flex-direction: column; /* stack items vertically */
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  .list__item {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
+
+  .modal {
+    width: 90%; /* modal fits mobile screen */
+    max-height: 80vh; /* taller but scrollable */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
