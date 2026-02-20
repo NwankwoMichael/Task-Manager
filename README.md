@@ -97,10 +97,6 @@ This project reflects my current JavaScript skillset. Every feature was implemen
 - **Edit Task Text**: allow inline editing of a task’s description
 - **Categories or Filters**: let users filter tasks by priority or category
 
-## 🔗 Live Demo
-
-[Try the Task Manager here](https://nwankwomichael.github.io/Task-Manager/)
-
 ## 🤝 Contributing
 
 Contributions are welcome! If you’d like to improve this project:
@@ -113,12 +109,6 @@ Contributions are welcome! If you’d like to improve this project:
 6. Open a Pull Request
 
 Please ensure your code follows the existing style and includes clear commit messages.
-
-## 📜 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
----
 
 ## 📜 License
 

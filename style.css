@@ -18,7 +18,7 @@
   padding: 0;
   margin: 0;
   transition: all 300ms ease-in;
-  font-family: var(--dont-body);
+  font-family: var(--font-body);
 }
 
 html {
@@ -39,7 +39,7 @@ body {
 
 .general__container {
   max-width: 60rem;
-  margin: 2rem auto;
+  margin: 4rem auto;
   background-color: var(--default);
   padding: 1.6rem;
   border-radius: 0.6rem;
@@ -385,5 +385,10 @@ button:focus {
     max-height: 80vh; /* taller but scrollable */
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .menu-icon {
+    width: 2rem;
+    height: 2rem;
   }
 }
