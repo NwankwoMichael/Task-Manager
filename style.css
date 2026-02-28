@@ -238,6 +238,9 @@ h3,
   list-style: none;
   padding: 0;
   margin-top: 2rem;
+  max-height: 15rem;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .task-list__container {
@@ -390,5 +393,56 @@ button:focus {
   .menu-icon {
     width: 2rem;
     height: 2rem;
+  }
+}
+
+/* 📱 Phone adjustments */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .general__container {
+    max-width: 100%;
+    margin: 0.5rem;
+    padding: 0.8rem;
+  }
+
+  .header {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .input__field {
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
+
+  .add__btn {
+    font-size: 1rem;
+    padding: 0.2rem 0.8rem;
+  }
+
+  .filter__container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.4rem;
+  }
+
+  .list__item {
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
+
+  .modal {
+    width: 95%;
+    max-height: 85vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .menu-icon {
+    width: 1.6rem;
+    height: 1.6rem;
   }
 }
